@@ -4,7 +4,7 @@ import { Provider } from "react-redux"
 import { BrowserRouter, Route, Routes } from "react-router"
 import { store } from "@/store"
 import "./index.css"
-import { ProtectedRoute } from "@/components/protected-route"
+import ProtectedRoute from "@/components/protected-route"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

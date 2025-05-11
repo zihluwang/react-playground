@@ -1,7 +1,7 @@
 import { Navigate, Outlet, useLocation } from "react-router"
 import { useAppSelector } from "@/store"
 
-export const ProtectedRoute = () => {
+export default function ProtectedRoute() {
   const isAuthenticated = useAppSelector((state) => state.auth.isAuthenticated)
   const location = useLocation()
 
